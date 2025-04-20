@@ -25,64 +25,67 @@
 
 ## 🛠 How to Run Locally
 
-1. Clone the repository:
+### Clone the repository:
 
 ```bash
 git clone https://github.com/OldAlexhub/AqariLens.git
 cd AqariLens
 Install required libraries:
+```
 
-bash
+```bash
 pip install -r requirements.txt
 Run the app:
+```
 
-bash
+```bash
 streamlit run app.py
 Open your browser at:
 http://localhost:8501
+```
 
 ## 📂 Project Structure
-File	Purpose
-app.py	Main Streamlit application
-AqariLens_rf_model.pkl	Trained Random Forest model
-unique_cities.pkl	Preprocessed city options
-unique_locations.pkl	Preprocessed location options
-unique_neighborhoods.pkl	Preprocessed neighborhood options
-requirements.txt	Python dependencies
-propertyfinder_full_data.csv	Original dataset (optional)
 
-🧐 How It Works
-User selects City, Location, Neighborhood from dropdowns (with search)
+**File** **Purpose**
+**app.py** Main Streamlit application
+**AqariLens_rf_model.pkl** Trained Random Forest model
+**unique_cities.pkl** Preprocessed city options
+**unique_locations.pkl** Preprocessed location options
+**unique_neighborhoods.pkl** Preprocessed neighborhood options
+**requirements.txt** Python dependencies
 
-User enters Bedrooms, Bathrooms, Area
+## 🧐 How It Works
 
-Text inputs are embedded via multilingual SentenceTransformer
+1- User selects City, Location, Neighborhood from dropdowns (with search)
 
-Features processed (log1p transformations)
+2- User enters Bedrooms, Bathrooms, Area
 
-Random Forest predicts log(price), converted to final EGP value
+3- Text inputs are embedded via multilingual SentenceTransformer
 
-App displays price estimate + confidence metrics
+4- Features processed (log1p transformations)
 
-🌟 Why AqariLens?
-Arabic and English semantic support
+5- Random Forest predicts log(price), converted to final EGP value
 
-No hardcoded mappings: real understanding
+6- App displays price estimate + confidence metrics
 
-Scalable architecture for future expansion
+## 🌟 Why AqariLens?
 
-Designed for real-world real estate chaos
+- Arabic and English semantic support
 
-Future-proof and lightweight
+- No hardcoded mappings: real understanding
 
-📸 Demo Screenshot
-(Insert app screenshot here after deployment — optional)
+- Scalable architecture for future expansion
 
-👨💼 Developed by
-Mohamed Gad
-Founder of OldAlexHub
+- Designed for real-world real estate chaos
 
-🛡 License
+- Future-proof and lightweight
+
+## 👨💼 Developed by
+
+**Mohamed Gad**
+Founder of **_OldAlexHub_**
+
+## 🛡 License
+
 This project is licensed for educational and practical deployment purposes.
 For full commercial usage or partnerships, contact OldAlexHub.
-```
